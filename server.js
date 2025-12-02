@@ -32,7 +32,5 @@ app.get('/', (req, res) => {
   res.render('index', { products });
 });
 
-
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
+// Export for Vercel
+module.exports = app;
