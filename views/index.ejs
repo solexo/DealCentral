@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deal Central</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <span class="logo-icon">🛒</span>
+            <h1>Deal Central</h1>
+        </div>
+        <p>Your ultimate destination for unbeatable deals and savings!</p>
+    </header>
+    <div class="products">
+        <% products.forEach(product => { %>
+            <div class="product">
+                <a href="<%= product.url %>" target="_blank"><%= product.name %></a>
+            </div>
+        <% }); %>
+    </div>
+</body>
+</html>
