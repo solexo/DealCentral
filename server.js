@@ -10,12 +10,18 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Products data - only HairMax affiliate product
+// Products data - Amazon affiliate products
 const products = [
   {
     "name": "Hairmax PowerFlex 272 Laser Cap - (FDA Cleared) Thinning Hair Loss Solution for Men & Women - Flexible Cordless Design With 7 Minute Treatment Time - Red Light Therapy to Stimulate Hair Growth",
     "url": "https://amzn.to/48siT70",
     "image": "https://m.media-amazon.com/images/I/41wCx1fhbQL._SY300_SX300_QL70_FMwebp_.jpg",
+    "price": "Price not available"
+  },
+  {
+    "name": "Amazon Affiliate Product 2",
+    "url": "https://amzn.to/4pNRZO8",
+    "image": "https://m.media-amazon.com/images/I/placeholder.jpg",
     "price": "Price not available"
   }
 ];
