@@ -23,6 +23,12 @@ const products = [
     "url": "https://amzn.to/4pNRZO8",
     "image": "https://m.media-amazon.com/images/I/519pESH--lL._AC_SY300_SX300_QL70_FMwebp_.jpg",
     "price": "Price not available"
+  },
+  {
+    "name": "Hyperice Hypervolt 2 Pro - Featuring Quiet Glide Technology - Handheld Percussion Massage Gun - 5 Speeds, 5 Interchangeable Heads - Helps Relieve Sore Muscles and Stiffness FSA-HSA",
+    "url": "https://amzn.to/49SByeE",
+    "image": "https://m.media-amazon.com/images/I/61jirA2o7nL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    "price": "Price not available"
   }
 ];
 
