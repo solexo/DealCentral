@@ -19,9 +19,9 @@ const products = [
     "price": "Price not available"
   },
   {
-    "name": "Amazon Affiliate Product 2",
+    "name": "Garmin 010-02293-10 Instinct Solar, Rugged Outdoor Smartwatch with Solar Charging Capabilities, Built-in Sports Apps and Health Monitoring, Graphite",
     "url": "https://amzn.to/4pNRZO8",
-    "image": "https://m.media-amazon.com/images/I/placeholder.jpg",
+    "image": "https://m.media-amazon.com/images/I/519pESH--lL._AC_SY300_SX300_QL70_FMwebp_.jpg",
     "price": "Price not available"
   }
 ];
