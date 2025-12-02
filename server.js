@@ -1,34 +1,35 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const fs = require('fs');
-const path = require('path');
 
 const app = express();
-const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 
-// Read products from file
-function readProducts() {
-  try {
-    const data = fs.readFileSync('products.json', 'utf8');
-    return JSON.parse(data);
-  } catch (err) {
-    return [];
+// Products data
+const products = [
+  {
+    "name": "Wireless Bluetooth Headphones",
+    "url": "https://example.com/product1",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/71qid7QFWJL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Apple iPhone 14 Pro",
+    "url": "https://example.com/product2",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/61XO4bORHVL._AC_SL1500_.jpg"
+  },
+  {
+    "name": "Hairmax PowerFlex 272 Laser Cap - (FDA Cleared) Thinning Hair Loss Solution for Men & Women - Flexible Cordless Design With 7 Minute Treatment Time - Red Light Therapy to Stimulate Hair Growth",
+    "url": "https://amzn.to/48siT70",
+    "image": "https://m.media-amazon.com/images/I/41wCx1fhbQL._SY300_SX300_QL70_FMwebp_.jpg",
+    "price": "Price not available"
   }
-}
-
-// Write products to file
-function writeProducts(products) {
-  fs.writeFileSync('products.json', JSON.stringify(products, null, 2));
-}
+];
 
 // Routes
 app.get('/', (req, res) => {
-  const products = readProducts();
   res.render('index', { products });
 });
 
