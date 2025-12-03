@@ -38,10 +38,34 @@
             <div class="product">
                 <a href="<%= product.url %>" target="_blank">
                     <img class="product-image" src="<%= product.image %>" alt="<%= product.name %>">
+                    <% if (product.images && product.images.length > 1) { %>
+                        <div class="additional-images">
+                            <% product.images.slice(1, 4).forEach(img => { %>
+                                <img src="<%= img %>" alt="product image" class="thumbnail">
+                            <% }); %>
+                        </div>
+                    <% } %>
                     <br><%= product.name %>
                 </a>
-                <% if (product.price && product.price !== 'Price not available') { %>
-                    <p><%= product.price %></p>
+                <% if (product.review) { %>
+                    <p class="review">⭐ <%= product.review %></p>
+                <% } %>
+                <% if (product.pros && product.pros.length) { %>
+                    <div class="pros-cons">
+                        <div class="pros">👍 Pros: <%= product.pros.join(', ') %></div>
+                        <% if (product.cons && product.cons.length) { %>
+                            <div class="cons">👎 Cons: <%= product.cons.join(', ') %></div>
+                        <% } %>
+                    </div>
+                <% } %>
+                <% if (product.whyBuy) { %>
+                    <p class="why-buy">💰 <%= product.whyBuy %></p>
+                <% } %>
+                <% if (product.dealScore) { %>
+                    <p class="deal-score">🔥 Deal Score: <%= product.dealScore %>/10</p>
+                <% } %>
+                <% if (product.editorPick) { %>
+                    <p class="editor-pick">Editor's Pick</p>
                 <% } %>
             </div>
         <% }); %>

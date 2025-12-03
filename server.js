@@ -13,88 +13,196 @@ app.set('views', path.join(__dirname, 'views'));
 // Products data - Amazon affiliate products
 const products = [
   {
-    "name": "Hairmax PowerFlex 272 Laser Cap - (FDA Cleared) Thinning Hair Loss Solution for Men & Women - Flexible Cordless Design With 7 Minute Treatment Time - Red Light Therapy to Stimulate Hair Growth",
+    "name": "Hairmax PowerFlex 272 Laser Cap - FDA Cleared Thinning Hair Loss Solution for Men & Women",
     "url": "https://amzn.to/48siT70",
     "image": "https://m.media-amazon.com/images/I/41wCx1fhbQL._SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Beauty & personal care"
+    "images": [
+      "https://m.media-amazon.com/images/I/41wCx1fhbQL._SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$199.00",
+    "category": "Beauty & personal care",
+    "review": "This laser cap uses FDA-cleared red light therapy to stimulate hair growth. It's comfortable, cordless, and easy to use with a 7-minute treatment time.",
+    "pros": ["FDA cleared", "Cordless and flexible design", "Quick 7-minute sessions"],
+    "cons": ["Requires consistent use", "Not covered by insurance"],
+    "whyBuy": "Ideal for those seeking a non-invasive solution to hair thinning with proven technology.",
+    "dealScore": 9.2,
+    "editorPick": true
   },
   {
-    "name": "Garmin 010-02293-10 Instinct Solar, Rugged Outdoor Smartwatch with Solar Charging Capabilities, Built-in Sports Apps and Health Monitoring, Graphite",
+    "name": "Garmin Instinct Solar Rugged Outdoor Watch with GPS, Graphite",
     "url": "https://amzn.to/4pNRZO8",
     "image": "https://m.media-amazon.com/images/I/519pESH--lL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Electronics"
+    "images": [
+      "https://m.media-amazon.com/images/I/519pESH--lL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$299.99",
+    "category": "Electronics",
+    "review": "A rugged smartwatch with solar charging, perfect for outdoor activities. Features built-in sports apps and health monitoring.",
+    "pros": ["Solar charging", "Rugged design", "Built-in GPS"],
+    "cons": ["Bulky design", "Limited app support"],
+    "whyBuy": "Great for adventurers who need reliable tracking without worrying about battery life.",
+    "dealScore": 9.5,
+    "editorPick": true
   },
   {
-    "name": "Hyperice Hypervolt 2 Pro - Featuring Quiet Glide Technology - Handheld Percussion Massage Gun - 5 Speeds, 5 Interchangeable Heads - Helps Relieve Sore Muscles and Stiffness FSA-HSA",
+    "name": "Hyperice Hypervolt 2 Pro Percussion Massage Gun",
     "url": "https://amzn.to/49SByeE",
     "image": "https://m.media-amazon.com/images/I/61jirA2o7nL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/61jirA2o7nL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$349.00",
+    "category": "Fitness & health tools",
+    "review": "A powerful massage gun with quiet operation and multiple speeds. Ideal for relieving muscle soreness and stiffness.",
+    "pros": ["Quiet operation", "5 speeds and interchangeable heads", "FSA/HSA eligible"],
+    "cons": ["Requires charging", "Heavy for some users"],
+    "whyBuy": "Perfect for athletes and anyone needing deep tissue relief at home.",
+    "dealScore": 9.0,
+    "editorPick": false
   },
   {
-    "name": "TheraGun Prime (6th Generation) Massage Gun by Therabody – Deep Tissue, Powerful Massage in a Rugged, Durable Design for Reliable Recovery & Pain Relief",
+    "name": "TheraGun Prime Massage Gun by Therabody",
     "url": "https://amzn.to/4rxA6EL",
     "image": "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$399.00",
+    "category": "Fitness & health tools",
+    "review": "Powerful deep tissue massage gun for reliable recovery and pain relief.",
+    "pros": ["Deep tissue relief", "Durable design", "Multiple attachments"],
+    "cons": ["Expensive", "Heavy"],
+    "whyBuy": "Ideal for serious athletes needing professional-grade recovery tools.",
+    "dealScore": 8.5,
+    "editorPick": false
   },
   {
-    "name": "Ekrin Athletics B37v2 Massage Gun - Deep Tissue Massage with High-Powered Brushless Motor - Ergonomic Back Massager for Pain Relief - 5 Speeds, 4 Attachments - Ultra Quiet Hand-Held Massager",
+    "name": "Ekrin Athletics B37v2 Massage Gun",
     "url": "https://amzn.to/3M60RjA",
     "image": "https://m.media-amazon.com/images/I/61h+YqgodkL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/61h+YqgodkL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$149.99",
+    "category": "Fitness & health tools",
+    "review": "High-powered massage gun with brushless motor, 5 speeds, and 4 attachments for deep tissue relief.",
+    "pros": ["Brushless motor", "5 speeds", "4 attachments", "Ultra quiet"],
+    "cons": ["Pricey", "Heavy for some"],
+    "whyBuy": "Ergonomic design for effective pain relief and muscle recovery.",
+    "dealScore": 8.8,
+    "editorPick": false
   },
   {
-    "name": "Compex Sport Elite 3.0 Muscle Stimulator with TENS Kit, 10 Programs Helps facilitate and Improve Muscle Performance, Black",
+    "name": "Compex Sport Elite 3.0 Muscle Stimulator",
     "url": "https://amzn.to/4rxAfbh",
     "image": "https://m.media-amazon.com/images/I/714B214bb6L._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/714B214bb6L._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$399.00",
+    "category": "Fitness & health tools",
+    "review": "Advanced muscle stimulator with multiple programs for performance enhancement and recovery.",
+    "pros": ["10 programs", "Wireless", "Rechargeable"],
+    "cons": ["Expensive", "Learning curve"],
+    "whyBuy": "Ideal for athletes looking to improve muscle performance and recovery.",
+    "dealScore": 8.8,
+    "editorPick": false
   },
   {
-    "name": "OMRON Max Power Relief TENS Unit Muscle Stimulator - Massage Therapy for Lower Back, Arm, Foot, Shoulder, and Arthritis Pain - Drug-Free Pain Relief",
+    "name": "OMRON Max Power Relief TENS Unit",
     "url": "https://amzn.to/4rzOA6W",
     "image": "https://m.media-amazon.com/images/I/611Bb4mY5VL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/611Bb4mY5VL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$49.99",
+    "category": "Fitness & health tools",
+    "review": "Effective TENS unit for pain relief in various body parts.",
+    "pros": ["Drug-free", "Easy to use", "Portable"],
+    "cons": ["Batteries not included", "Not for all pain types"],
+    "whyBuy": "Great for managing chronic pain without medication.",
+    "dealScore": 8.5,
+    "editorPick": false
   },
   {
-    "name": "Omron Focus TENS Therapy for Knee Unit Wireless Muscle Stimulator with Sweep Waveform Technology, Medium, White",
+    "name": "Omron Focus TENS Therapy for Knee Unit",
     "url": "https://amzn.to/3MzUIfu",
     "image": "https://m.media-amazon.com/images/I/61BP5EajOkL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/61BP5EajOkL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$79.99",
+    "category": "Fitness & health tools",
+    "review": "Wireless TENS unit specifically designed for knee pain relief.",
+    "pros": ["Wireless", "Knee-specific", "Sweep waveform"],
+    "cons": ["Single use", "Requires prescription in some areas"],
+    "whyBuy": "Targeted relief for knee pain sufferers.",
+    "dealScore": 8.0,
+    "editorPick": false
   },
   {
-    "name": "iReliev TENS Unit + EMS Muscle Stimulator Comes with 14 Therapy Modes, Premium Pain Relief and Recovery System, Rechargeable, Large Back Lit Display, Large and Small Electrode Pads",
+    "name": "iReliev TENS + EMS Muscle Stimulator",
     "url": "https://amzn.to/48zTpEN",
     "image": "https://m.media-amazon.com/images/I/61VezFVfkqL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/61VezFVfkqL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$39.99",
+    "category": "Fitness & health tools",
+    "review": "Versatile TENS and EMS unit with 14 modes for pain relief and muscle recovery.",
+    "pros": ["14 therapy modes", "Rechargeable", "Backlit display"],
+    "cons": ["May be overwhelming for beginners", "Pads wear out"],
+    "whyBuy": "Comprehensive device for both pain management and muscle building.",
+    "dealScore": 8.7,
+    "editorPick": false
   },
   {
-    "name": "AUVON Rechargeable TENS Unit Muscle Stimulator, 24 Modes 4th Gen TENS Machine with 8pcs 2\"x2\" Premium Electrode Pads for Pain Relief",
+    "name": "AUVON Rechargeable TENS Unit",
     "url": "https://amzn.to/4iyKSXn",
     "image": "https://m.media-amazon.com/images/I/71Vh6zkeETL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/71Vh6zkeETL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$29.99",
+    "category": "Fitness & health tools",
+    "review": "Affordable TENS unit with 24 modes and premium electrode pads.",
+    "pros": ["24 modes", "Rechargeable", "Premium pads"],
+    "cons": ["Basic design", "No EMS"],
+    "whyBuy": "Budget-friendly option for effective pain relief.",
+    "dealScore": 8.2,
+    "editorPick": false
   },
   {
-    "name": "BOB AND BRAD C2 Massage Gun, FSA Eligible & HSA Approved Deep Tissue Percussion Massager Gun, Muscle Massager with 5 Speeds and 5 Heads, Electric Back Massagers for Professional Athletes Home Gym",
+    "name": "BOB AND BRAD C2 Massage Gun",
     "url": "https://amzn.to/3KsRzNS",
     "image": "https://m.media-amazon.com/images/I/711wc7K7QML._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/711wc7K7QML._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$199.99",
+    "category": "Fitness & health tools",
+    "review": "Powerful massage gun with 5 speeds and interchangeable heads, FSA/HSA approved.",
+    "pros": ["5 speeds", "Interchangeable heads", "FSA/HSA eligible"],
+    "cons": ["Heavy", "Noisy"],
+    "whyBuy": "Professional-grade recovery tool for athletes and home use.",
+    "dealScore": 9.0,
+    "editorPick": true
   },
   {
-    "name": "Pure Enrichment® PureRelief XL Heating Pad - 12\" x 24\" Electric Heating Pad for Back Pain & Cramps, 6 Heat Settings, Soft Machine Wash Fabric, Auto-Off & Moist Heat (Blue)",
+    "name": "Pure Enrichment PureRelief XL Heating Pad",
     "url": "https://amzn.to/4pIhPD1",
     "image": "https://m.media-amazon.com/images/I/918L2JjRA5L._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "price": "Price not available",
-    "category": "Fitness & health tools"
+    "images": [
+      "https://m.media-amazon.com/images/I/918L2JjRA5L._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$39.99",
+    "category": "Fitness & health tools",
+    "review": "Large heating pad with 6 heat settings and moist heat option for pain relief.",
+    "pros": ["Large size", "6 heat settings", "Moist heat"],
+    "cons": ["Corded", "Not for all body parts"],
+    "whyBuy": "Effective and affordable solution for back pain and cramps.",
+    "dealScore": 8.5,
+    "editorPick": false
   }
 ];
 
