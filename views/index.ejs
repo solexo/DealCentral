@@ -4,16 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deal Central</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <header>
+        <div class="menu-container">
+            <button class="menu-button" onclick="toggleMenu()">⋮</button>
+            <nav class="navigation" id="navigation">
+                <a href="/" class="<%= currentCategory === null ? 'active' : '' %>">Home</a>
+                <a href="/category/Electronics" class="<%= currentCategory === 'Electronics' ? 'active' : '' %>">Electronics</a>
+                <a href="/category/Home-&-kitchen-gadgets" class="<%= currentCategory === 'Home & kitchen gadgets' ? 'active' : '' %>">Home & Kitchen</a>
+                <a href="/category/Beauty-&-personal-care" class="<%= currentCategory === 'Beauty & personal care' ? 'active' : '' %>">Beauty & Personal Care</a>
+                <a href="/category/Fitness-&-health-tools" class="<%= currentCategory === 'Fitness & health tools' ? 'active' : '' %>">Fitness & Health</a>
+                <a href="/category/Baby-products" class="<%= currentCategory === 'Baby products' ? 'active' : '' %>">Baby Products</a>
+                <a href="/category/Seasonal-items" class="<%= currentCategory === 'Seasonal items' ? 'active' : '' %>">Seasonal Items</a>
+            </nav>
+        </div>
         <div class="logo">
             <span class="logo-icon">🛒</span>
             <h1>Deal Central</h1>
         </div>
         <p>Your ultimate destination for unbeatable deals and savings!</p>
     </header>
+    <% if (currentCategory !== null) { %>
+    <div class="category-header">
+        <h2><%= currentCategory %></h2>
+        <a href="/" class="back-link">← Back to Home</a>
+    </div>
+    <% } %>
     <div class="products">
         <% products.forEach(product => { %>
             <div class="product">
@@ -27,5 +46,39 @@
             </div>
         <% }); %>
     </div>
+    <% if (currentCategory === null) { %>
+    <div class="hot-categories">
+        <h2>Hot Categories</h2>
+        <div class="categories-grid">
+            <a href="/category/Electronics" class="category-link">
+                <div class="category">Electronics (best sellers, deals)</div>
+            </a>
+            <a href="/category/Home-&-kitchen-gadgets" class="category-link">
+                <div class="category">Home & kitchen gadgets</div>
+            </a>
+            <a href="/category/Beauty-&-personal-care" class="category-link">
+                <div class="category">Beauty & personal care</div>
+            </a>
+            <a href="/category/Fitness-&-health-tools" class="category-link">
+                <div class="category">Fitness & health tools</div>
+            </a>
+            <a href="/category/Baby-products" class="category-link">
+                <div class="category">Baby products</div>
+            </a>
+            <a href="/category/Seasonal-items" class="category-link">
+                <div class="category">Seasonal items</div>
+            </a>
+        </div>
+    </div>
+    <% } %>
+    <footer>
+        <p>&copy; 2025 Deal Central. All rights reserved. | Find the best deals on Amazon.</p>
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navigation');
+            nav.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
