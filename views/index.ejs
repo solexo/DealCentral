@@ -3,9 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deal Central</title>
+    <title><%= title %></title>
+    <meta name="description" content="<%= description %>">
+    <meta name="keywords" content="<%= keywords %>">
+    <link rel="canonical" href="<%= canonicalUrl %>">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
     <link rel="stylesheet" href="/styles.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="<%= title %>">
+    <meta property="og:description" content="<%= description %>">
+    <meta property="og:url" content="<%= canonicalUrl %>">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://dealcentral.vercel.app/images/logo.png">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="<%= title %>">
+    <meta name="twitter:description" content="<%= description %>">
+    <meta name="twitter:image" content="https://dealcentral.vercel.app/images/logo.png">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Deal Central",
+      "url": "<%= canonicalUrl %>",
+      "description": "<%= description %>",
+      "logo": "https://dealcentral.vercel.app/images/logo.png"
+    }
+    </script>
 </head>
 <body>
     <header>
@@ -68,6 +96,28 @@
                     <p class="editor-pick">Editor's Pick</p>
                 <% } %>
             </div>
+            <script type="application/ld+json">
+            {
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "<%= product.name %>",
+              "image": "<%= product.image %>",
+              "description": "<%= product.review %>",
+              "offers": {
+                "@type": "Offer",
+                "url": "<%= product.url %>",
+                "price": "<%= product.price.replace(/[^0-9.]/g, '') %>",
+                "priceCurrency": "USD",
+                "availability": "https://schema.org/InStock"
+              },
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "<%= (product.dealScore / 2).toFixed(1) %>",
+                "bestRating": "5",
+                "reviewCount": "1"
+              }
+            }
+            </script>
         <% }); %>
     </div>
     <% if (currentCategory === null) { %>
