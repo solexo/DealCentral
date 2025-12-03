@@ -203,6 +203,38 @@ const products = [
     "whyBuy": "Effective and affordable solution for back pain and cramps.",
     "dealScore": 8.5,
     "editorPick": false
+  },
+  {
+    "name": "Ninja DZ201 Foodi 8 Quart 6-in-1 DualZone 2-Basket Air Fryer",
+    "url": "https://amzn.to/48xpLjs",
+    "image": "https://m.media-amazon.com/images/I/511+uXaPLlL._AC_SL1001_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/511+uXaPLlL._AC_SL1001_.jpg"
+    ],
+    "price": "$129.99",
+    "category": "Home & kitchen gadgets",
+    "review": "Versatile 6-in-1 air fryer with dual baskets for cooking multiple items simultaneously. Features Match Cook technology for perfect results.",
+    "pros": ["Dual baskets", "6 cooking functions", "Match Cook technology"],
+    "cons": ["Large footprint", "Learning curve for settings"],
+    "whyBuy": "Ideal for families needing efficient, healthy cooking options.",
+    "dealScore": 9.0,
+    "editorPick": false
+  },
+  {
+    "name": "DREAME X40 Ultra Robotic Vacuum with Removable & Liftable Mop",
+    "url": "https://amzn.to/3MaGUbn",
+    "image": "https://m.media-amazon.com/images/I/715PiEJ-NGL._AC_SL1500_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/715PiEJ-NGL._AC_SL1500_.jpg"
+    ],
+    "price": "$589.00",
+    "category": "Home & kitchen gadgets",
+    "review": "Advanced robotic vacuum with powerful suction, self-emptying, and mopping capabilities. Features auto-refill and self-cleaning.",
+    "pros": ["12,000Pa suction", "Self-emptying", "Mopping function"],
+    "cons": ["Expensive", "Requires app setup"],
+    "whyBuy": "Perfect for hands-free home cleaning with advanced features.",
+    "dealScore": 8.8,
+    "editorPick": true
   }
 ];
 

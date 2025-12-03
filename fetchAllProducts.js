@@ -2,15 +2,8 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 const affiliateUrls = [
-    'https://amzn.to/4rxA6EL',
-    'https://amzn.to/3M60RjA',
-    'https://amzn.to/4rxAfbh',
-    'https://amzn.to/4rzOA6W',
-    'https://amzn.to/3MzUIfu',
-    'https://amzn.to/48zTpEN',
-    'https://amzn.to/4iyKSXn',
-    'https://amzn.to/3KsRzNS',
-    'https://amzn.to/4pIhPD1'
+    'https://amzn.to/48xpLjs',
+    'https://amzn.to/3MaGUbn'
 ];
 
 async function fetchProduct(url) {
@@ -34,7 +27,8 @@ async function fetchProduct(url) {
                     'Sec-Fetch-Mode': 'navigate',
                     'Sec-Fetch-Site': 'none',
                     'Sec-Fetch-User': '?1',
-                    'Cache-Control': 'max-age=0'
+                    'Cache-Control': 'max-age=0',
+                    'Referer': 'https://www.amazon.com/'
                 },
                 timeout: 15000
             });

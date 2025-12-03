@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const affiliateUrl = 'https://amzn.to/4pNRZO8';
+const affiliateUrl = 'https://amzn.to/48xpLjs';
 
 async function fetchProduct() {
     try {
