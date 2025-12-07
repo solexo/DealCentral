@@ -6,6 +6,7 @@
     <title><%= title %></title>
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="<%= keywords %>">
+    <meta name="robots" content="index, follow">
     <link rel="canonical" href="<%= canonicalUrl %>">
     <link rel="icon" href="/Trendifyz.png">
     <link rel="apple-touch-icon" href="/Trendifyz.png">
@@ -30,11 +31,15 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
+      "@type": "WebSite",
       "name": "Trendifyz",
       "url": "<%= canonicalUrl %>",
       "description": "<%= description %>",
-      "logo": "<%= baseUrl %>/trendifyz.png"
+      "publisher": {
+        "@type": "Organization",
+        "name": "Trendifyz",
+        "logo": "<%= baseUrl %>/trendifyz.png"
+      }
     }
     </script>
     <!-- Pinterest Tag -->

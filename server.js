@@ -10,6 +10,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
+// Set X-Robots-Tag header
+app.use((req, res, next) => {
+  res.setHeader('X-Robots-Tag', 'index, follow');
+  next();
+});
+
 // Products data - Amazon affiliate products
 const products = [
   {
