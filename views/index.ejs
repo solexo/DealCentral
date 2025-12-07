@@ -72,7 +72,9 @@
                             <% }); %>
                         </div>
                     <% } %>
-                    <br><%= product.name %>
+                    <h3 class="product-title"><%= product.name %></h3>
+                    <p class="product-price"><%= product.price %></p>
+                    <button class="cta-button">View Deal</button>
                 </a>
                 <% if (product.review) { %>
                     <p class="review">⭐ <%= product.review %></p>
