@@ -1093,6 +1093,22 @@ const products = [
     "whyBuy": "Ideal for serious athletes needing professional-grade recovery tools.",
     "dealScore": 8.5,
     "editorPick": false
+  },
+  {
+    "name": "Keurig K-Mini Mate Single Serve Coffee Maker – Ultra-Compact 4” Width, Travel Mug Friendly, Ideal Holiday Gift for Small Spaces, Black",
+    "url": "https://www.amazon.com/Keurig-K-Mini-Single-Serve-Coffee/dp/B0FMTSRKYL/ref=zg_bsnr_c_home-garden_d_sccl_3/136-9393038-1765419?pd_rd_w=kNVFv&content-id=amzn1.sym.fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_p=fef9af56-6177-46e9-8710-a5293a68dd39&pf_rd_r=HAKD5VDZC7ZQE40515B0&pd_rd_wg=xCzXZ&pd_rd_r=d647c7a8-c15a-4a14-a38a-e13c5ccfdcf3&pd_rd_i=B0FMTSRKYL&th=1",
+    "image": "https://m.media-amazon.com/images/I/618D34n8gLL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/618D34n8gLL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$79.99",
+    "category": "Home & kitchen gadgets",
+    "review": "Compact single-serve coffee maker perfect for small spaces and travel. Brews coffee quickly with K-Cup pods.",
+    "pros": ["Ultra-compact design", "Travel mug friendly", "Quick brewing"],
+    "cons": ["Requires K-Cup pods", "Limited to single serve"],
+    "whyBuy": "Ideal for coffee lovers with limited space or on the go.",
+    "dealScore": 8.5,
+    "editorPick": false
   }
 ];
 
