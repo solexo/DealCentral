@@ -1092,27 +1092,30 @@ const products = [
 
 // Routes
 app.get('/', (req, res) => {
-  const baseUrl = process.env.BASE_URL || 'https://dealcentral.vercel.app';
+  const baseUrl = process.env.BASE_URL || 'https://trendifyz.vercel.app';
   const canonicalUrl = baseUrl + req.originalUrl;
-  const title = 'Deal Central - Your ultimate destination for unbeatable deals and savings!';
-  const description = 'Discover amazing deals on electronics, home gadgets, beauty products, fitness tools, and more at Deal Central. Shop the best Amazon affiliate products with reviews and ratings.';
+  const title = 'Trendifyz - Discover the latest trends and unbeatable deals!';
+  const description = 'Discover amazing deals on electronics, home gadgets, beauty products, fitness tools, and more at Trendifyz. Shop the best Amazon affiliate products with reviews and ratings.';
   const keywords = 'deals, amazon, electronics, gaming, home, kitchen, gadgets, beauty, personal care, fitness, health, baby products, discounts';
-  res.render('index', { products, currentCategory: null, title, description, keywords, canonicalUrl });
+  res.render('index', { products, currentCategory: null, title, description, keywords, canonicalUrl, baseUrl });
 });
 
 app.get('/category/:category', (req, res) => {
   const category = req.params.category.replace(/-/g, ' '); // Handle URL encoding
   const filteredProducts = products.filter(product => product.category.toLowerCase() === category.toLowerCase());
-  const baseUrl = process.env.BASE_URL || 'https://dealcentral.vercel.app';
+  const baseUrl = process.env.BASE_URL || 'https://trendifyz.vercel.app';
   const canonicalUrl = baseUrl + req.originalUrl;
-  const title = `Deal Central - ${category}`;
-  const description = `Find the best deals in ${category} at Deal Central. Explore top-rated products with reviews, pros, cons, and deal scores.`;
+  const title = `Trendifyz - ${category}`;
+  const description = `Find the best deals in ${category} at Trendifyz. Explore top-rated products with reviews, pros, cons, and deal scores.`;
   const keywords = 'deals, amazon, electronics, gaming, home, kitchen, gadgets, beauty, personal care, fitness, health, baby products, discounts';
-  res.render('index', { products: filteredProducts, currentCategory: category, title, description, keywords, canonicalUrl });
+  res.render('index', { products: filteredProducts, currentCategory: category, title, description, keywords, canonicalUrl, baseUrl });
 });
 
 // Export for Vercel
 module.exports = app;
+
+// Export products for other scripts
+module.exports.products = products;
 
 // For local development
 if (require.main === module) {

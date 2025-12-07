@@ -5,7 +5,7 @@ const products = require('./server.js').products || [];
 
 function generateCanvaCSV() {
   // CSV headers for Canva bulk video generation
-  let csv = 'Video Title,Description,Image URL,CTA Text,Category\n';
+  let csv = 'Video Title,Description,Image URL,CTA Text,Category,Link\n';
 
   products.forEach(product => {
     const title = `"${product.name.replace(/"/g, '""')}"`;
@@ -13,8 +13,9 @@ function generateCanvaCSV() {
     const imageUrl = product.image;
     const ctaText = '"Shop Now"';
     const category = `"${product.category}"`;
+    const link = product.url;
 
-    csv += `${title},${description},${imageUrl},${ctaText},${category}\n`;
+    csv += `${title},${description},${imageUrl},${ctaText},${category},${link}\n`;
   });
 
   // Write to file

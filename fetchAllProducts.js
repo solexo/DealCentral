@@ -2,8 +2,24 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 
 const affiliateUrls = [
-    'https://amzn.to/48xpLjs',
-    'https://amzn.to/3MaGUbn'
+    'https://amzn.to/48lYgcs',
+    'https://amzn.to/4rEO6ge',
+    'https://amzn.to/48NZ8In',
+    'https://amzn.to/4oyHzAW',
+    'https://amzn.to/48Og2Xi',
+    'https://amzn.to/4pJhLD1',
+    'https://amzn.to/4rtM02p',
+    'https://amzn.to/3Xxi2gf',
+    'https://amzn.to/4ovb3iQ',
+    'https://amzn.to/4pOYIY8',
+    'https://amzn.to/3Xxi7k3',
+    'https://amzn.to/4pJhMXB',
+    'https://amzn.to/441yPfg',
+    'https://amzn.to/4ovmTK0',
+    'https://amzn.to/3Y2ai67',
+    'https://amzn.to/443sShK',
+    'https://amzn.to/44FAx67',
+    'https://amzn.to/4aqfyYC'
 ];
 
 async function fetchProduct(url) {
@@ -86,7 +102,7 @@ async function fetchAllProducts() {
             products.push(product);
         }
         // Add delay between requests to avoid rate limiting
-        await new Promise(resolve => setTimeout(resolve, 2000));
+        await new Promise(resolve => setTimeout(resolve, 500));
     }
 
     return products;
@@ -95,4 +111,8 @@ async function fetchAllProducts() {
 fetchAllProducts().then(products => {
     console.log('Fetched', products.length, 'products');
     console.log(JSON.stringify(products, null, 2));
+    // Write to file
+    const fs = require('fs');
+    fs.writeFileSync('products_new.json', JSON.stringify(products, null, 2));
+    console.log('Products saved to products_new.json');
 });
