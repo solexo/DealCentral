@@ -61,22 +61,6 @@ const products = [
     "editorPick": false
   },
   {
-    "name": "TheraGun Prime Massage Gun by Therabody",
-    "url": "https://amzn.to/4rxA6EL",
-    "image": "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg",
-    "images": [
-      "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg"
-    ],
-    "price": "$399.00",
-    "category": "Fitness & health tools",
-    "review": "Powerful deep tissue massage gun for reliable recovery and pain relief.",
-    "pros": ["Deep tissue relief", "Durable design", "Multiple attachments"],
-    "cons": ["Expensive", "Heavy"],
-    "whyBuy": "Ideal for serious athletes needing professional-grade recovery tools.",
-    "dealScore": 8.5,
-    "editorPick": false
-  },
-  {
     "name": "Ekrin Athletics B37v2 Massage Gun",
     "url": "https://amzn.to/3M60RjA",
     "image": "https://m.media-amazon.com/images/I/61h+YqgodkL._AC_SY300_SX300_QL70_FMwebp_.jpg",
@@ -1086,6 +1070,22 @@ const products = [
     "cons": ["Requires player", "Single story"],
     "whyBuy": "Engaging way to enjoy classic children's literature.",
     "dealScore": 8.0,
+    "editorPick": false
+  },
+  {
+    "name": "TheraGun Prime Massage Gun by Therabody",
+    "url": "https://amzn.to/4rxA6EL",
+    "image": "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/71d+MDU8ylL._AC_SY300_SX300_QL70_FMwebp_.jpg"
+    ],
+    "price": "$399.00",
+    "category": "Fitness & health tools",
+    "review": "Powerful deep tissue massage gun for reliable recovery and pain relief.",
+    "pros": ["Deep tissue relief", "Durable design", "Multiple attachments"],
+    "cons": ["Expensive", "Heavy"],
+    "whyBuy": "Ideal for serious athletes needing professional-grade recovery tools.",
+    "dealScore": 8.5,
     "editorPick": false
   }
 ];
