@@ -7,31 +7,32 @@
     <meta name="description" content="<%= description %>">
     <meta name="keywords" content="<%= keywords %>">
     <link rel="canonical" href="<%= canonicalUrl %>">
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛒</text></svg>">
+    <link rel="icon" href="/trendifyz.png">
     <link rel="stylesheet" href="/styles.css">
+
 
     <!-- Open Graph -->
     <meta property="og:title" content="<%= title %>">
     <meta property="og:description" content="<%= description %>">
     <meta property="og:url" content="<%= canonicalUrl %>">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://dealcentral.vercel.app/images/logo.png">
+    <meta property="og:image" content="<%= baseUrl %>/trendifyz.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="<%= title %>">
     <meta name="twitter:description" content="<%= description %>">
-    <meta name="twitter:image" content="https://dealcentral.vercel.app/images/logo.png">
+    <meta name="twitter:image" content="<%= baseUrl %>/trendifyz.png">
 
     <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Deal Central",
+      "name": "Trendifyz",
       "url": "<%= canonicalUrl %>",
       "description": "<%= description %>",
-      "logo": "https://dealcentral.vercel.app/images/logo.png"
+      "logo": "<%= baseUrl %>/trendifyz.png"
     }
     </script>
 </head>
@@ -45,15 +46,13 @@
                 <a href="/category/Home-&-kitchen-gadgets" class="<%= currentCategory === 'Home & kitchen gadgets' ? 'active' : '' %>">Home & Kitchen</a>
                 <a href="/category/Beauty-&-personal-care" class="<%= currentCategory === 'Beauty & personal care' ? 'active' : '' %>">Beauty & Personal Care</a>
                 <a href="/category/Fitness-&-health-tools" class="<%= currentCategory === 'Fitness & health tools' ? 'active' : '' %>">Fitness & Health</a>
-                <a href="/category/Baby-products" class="<%= currentCategory === 'Baby products' ? 'active' : '' %>">Baby Products</a>
-                <a href="/category/Discounts" class="<%= currentCategory === 'Discounts' ? 'active' : '' %>">Discount %</a>
+                <a href="https://www.pinterest.com/TrendifyzOfficial/" target="_blank">Pinterest</a>
             </nav>
         </div>
         <div class="logo">
-            <span class="logo-icon">🛒</span>
-            <h1>Deal Central</h1>
+            <img src="/trendifyz.png" alt="Trendifyz Logo" class="logo-icon">
         </div>
-        <p>Your ultimate destination for unbeatable deals and savings!</p>
+        <p>Discover the latest trends and unbeatable deals!</p>
     </header>
     <% if (currentCategory !== null) { %>
     <div class="category-header">
@@ -95,6 +94,7 @@
                 <% if (product.editorPick) { %>
                     <p class="editor-pick">Editor's Pick</p>
                 <% } %>
+                <p class="product-back-link"><a href="/">Back to Trendifyz</a></p>
             </div>
             <script type="application/ld+json">
             {
@@ -136,17 +136,16 @@
             <a href="/category/Fitness-&-health-tools" class="category-link">
                 <div class="category">Fitness & health tools</div>
             </a>
-            <a href="/category/Baby-products" class="category-link">
-                <div class="category">Baby products</div>
-            </a>
-            <a href="/category/Discounts" class="category-link">
-                <div class="category">Discount %</div>
-            </a>
         </div>
     </div>
     <% } %>
     <footer>
-        <p>&copy; 2025 Deal Central. All rights reserved. | Find the best deals on Amazon.</p>
+        <div class="partner-logos">
+            <a href="https://www.amazon.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg" alt="Amazon" style="height: 40px;"></a>
+            <a href="https://www.ebay.com" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1b/EBay_logo.svg" alt="eBay" style="height: 40px;"></a>
+            <a href="https://www.temu.com" target="_blank"><img src="https://logos-world.net/wp-content/uploads/2023/03/Temu-Logo.png" alt="Temu" style="height: 40px;"></a>
+        </div>
+        <p>&copy; 2025 Trendifyz. All rights reserved. | Find the best deals on Amazon.</p>
     </footer>
     <script>
         function toggleMenu() {

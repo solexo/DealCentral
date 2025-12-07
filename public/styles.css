@@ -747,6 +747,28 @@ footer::before {
     z-index: -1;
 }
 
+.partner-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 10px;
+}
+
+.product-back-link {
+    font-size: 0.8em;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.product-back-link a {
+    color: #b8c5d6;
+    text-decoration: none;
+}
+
+.product-back-link a:hover {
+    color: #ff6b35;
+}
+
 footer p {
     margin: 0;
     font-size: 0.9em;
