@@ -1126,6 +1126,23 @@ const products = [
     "whyBuy": "Perfect for tech-savvy individuals needing hands-free assistance, translation, and recording capabilities on the go.",
     "dealScore": 8.5,
     "editorPick": false
+  },
+  {
+    "name": "Nutrafol Women's Balance Hair Growth Supplements, Ages 45 and Up, Clinically Proven for Visibly Thicker Hair and Scalp Coverage, Dermatologist Recommended - 1 Month Supply",
+    "url": "https://www.amazon.com/Nutrafol-Supplements-Clinically-Dermatologist-Recommended/dp/B07QZ5CTTF/ref=sr_1_2_sspa?crid=2WCFVX508AVYZ&dib=eyJ2IjoiMSJ9.jmhc7mbmoxQezFum9AgeTkRn4SnKJoqM5EeckpWbJhGeELJrn5luSQWMAo0qd0exvtu8dfNFH3wzjHk26VEmHxihiKnSkeeNFLMaNdrwmuiOVihMHiYlTqM3TeDd4_wo-vjd34PrON5o10RgybGmsfQNYVnz8uNmjm12wZVmKM51X8_fZcKX3z_5bZ1qXaEmwH9VydIZRwygIFLAFUjPYbjzEx2VyppfFTpsaFwVGbWFE8r6L8EYUS36M-gRZ8MIlQ2ks466ZtG1qMmDhu7z3Ztm4m1GsvmdlAnoMIdq-KY.7fsDL0m0o7e94bnQPMhJnpTz7r9Vrl3Dtp2o2UXkSQw&dib_tag=se&keywords=hair&qid=1765219861&sprefix=hair%2Caps%2C943&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
+    "image": "https://m.media-amazon.com/images/I/311NWArnJkL._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/311NWArnJkL._SX342_SY445_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71x3lKqI-cL._SL1500_.jpg"
+    ],
+    "price": "Price not available",
+    "category": "Beauty & personal care",
+    "review": "Clinically proven hair growth supplements for women 45 and up, designed to promote visibly thicker hair and scalp coverage. Dermatologist recommended for natural hair health.",
+    "pros": ["Clinically proven", "Dermatologist recommended", "Natural ingredients"],
+    "cons": ["Price not available", "Requires consistent use"],
+    "whyBuy": "Ideal for women seeking effective, science-backed solutions for hair thinning and growth.",
+    "dealScore": 8.5,
+    "editorPick": false
   }
 ];
 
