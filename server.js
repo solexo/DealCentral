@@ -1109,6 +1109,23 @@ const products = [
     "whyBuy": "Ideal for coffee lovers with limited space or on the go.",
     "dealScore": 8.5,
     "editorPick": false
+  },
+  {
+    "name": "Upgraded Ai Smart Glasses with Camera, 800w Anti-Shake Camera Glasses, Real-Time Translation, Ai Object Recognition, Voice Assistant, Blue Light Glasses Suitable for Business, Travel and Outdoor Use",
+    "url": "https://amzn.to/4rKOOZ6",
+    "image": "https://m.media-amazon.com/images/I/61z+M3EiChL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61z+M3EiChL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/61z+M3EiChL._AC_SL1500_.jpg"
+    ],
+    "price": "Price not available",
+    "category": "Electronics & Gaming",
+    "review": "Advanced smart glasses featuring an 800w anti-shake camera, real-time translation, AI object recognition, voice assistant, and blue light protection. Ideal for business, travel, and outdoor activities.",
+    "pros": ["Anti-shake camera", "Real-time translation", "AI object recognition", "Voice assistant", "Blue light protection"],
+    "cons": ["Price not available", "May require learning curve"],
+    "whyBuy": "Perfect for tech-savvy individuals needing hands-free assistance, translation, and recording capabilities on the go.",
+    "dealScore": 8.5,
+    "editorPick": false
   }
 ];
 
