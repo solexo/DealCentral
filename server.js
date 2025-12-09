@@ -1132,7 +1132,8 @@ const products = [
     "url": "https://www.amazon.com/Nutrafol-Supplements-Clinically-Dermatologist-Recommended/dp/B07QZ5CTTF/ref=sr_1_2_sspa?crid=2WCFVX508AVYZ&dib=eyJ2IjoiMSJ9.jmhc7mbmoxQezFum9AgeTkRn4SnKJoqM5EeckpWbJhGeELJrn5luSQWMAo0qd0exvtu8dfNFH3wzjHk26VEmHxihiKnSkeeNFLMaNdrwmuiOVihMHiYlTqM3TeDd4_wo-vjd34PrON5o10RgybGmsfQNYVnz8uNmjm12wZVmKM51X8_fZcKX3z_5bZ1qXaEmwH9VydIZRwygIFLAFUjPYbjzEx2VyppfFTpsaFwVGbWFE8r6L8EYUS36M-gRZ8MIlQ2ks466ZtG1qMmDhu7z3Ztm4m1GsvmdlAnoMIdq-KY.7fsDL0m0o7e94bnQPMhJnpTz7r9Vrl3Dtp2o2UXkSQw&dib_tag=se&keywords=hair&qid=1765219861&sprefix=hair%2Caps%2C943&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1",
     "image": "https://m.media-amazon.com/images/I/311NWArnJkL._SX342_SY445_QL70_FMwebp_.jpg",
     "images": [
-      "https://m.media-amazon.com/images/I/311NWArnJkL._SX342_SY445_QL70_FMwebp_.jpg"
+      "https://m.media-amazon.com/images/I/311NWArnJkL._SX342_SY445_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71x3lKqI-cL._SL1500_.jpg"
     ],
     "price": "Price not available",
     "category": "Beauty & personal care",
@@ -1141,6 +1142,40 @@ const products = [
     "cons": ["Price not available", "Requires consistent use"],
     "whyBuy": "Ideal for women seeking effective, science-backed solutions for hair thinning and growth.",
     "dealScore": 8.5,
+    "editorPick": false
+  },
+  {
+    "name": "Dove Brown Sugar and Coconut Butter Body Scrub Exfoliates and Deeply Nourishes for Smooth, Radiant Skin 15 oz",
+    "url": "https://www.amazon.com/Dove-Coconut-Exfoliates-Nourishes-Radiant/dp/B0DNTZTS1L/ref=hw_25_a_dag_g_6abb?pf_rd_p=b739da0f-9af7-41e3-addc-20654cc36ecc&pf_rd_r=ZQC29BF9T66YW91P9W3Y&sr=1-7-969f4cb0-824d-4648-acec-369c6cfab238&th=1",
+    "image": "https://m.media-amazon.com/images/I/61xkCi4ZerL._SY300_SX300_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/61xkCi4ZerL._SY300_SX300_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/71mPN1QlerL._SL1500_.jpg"
+    ],
+    "price": "Price not available",
+    "category": "Beauty & personal care",
+    "review": "A gentle body scrub with brown sugar and coconut butter that exfoliates and nourishes the skin for a smooth, radiant finish.",
+    "pros": ["Gentle exfoliation", "Nourishing ingredients", "Pleasant scent"],
+    "cons": ["Price not available", "May not be suitable for sensitive skin"],
+    "whyBuy": "Perfect for achieving soft, glowing skin with natural ingredients.",
+    "dealScore": 8.0,
+    "editorPick": false
+  },
+  {
+    "name": "Meta Quest 3S 128GB | VR Headset — Thirty-Three Percent More Memory — 2X Graphical Processing Power — Virtual Reality Without Wires — Exclusive Gorilla Tag Bundle and Instant Access to 40+ Games",
+    "url": "https://www.amazon.com/Meta-Quest-128GB-Cardboard-Exclusive-Oculus/dp/B0F2GYMC8H?pf_rd_p=2b46bcf8-ad8c-4e4b-bb3e-d4146d83a21c&pf_rd_r=70274V03QGVN3C78EW0Y&sr=1-7-969f4cb0-824d-4648-acec-369c6cfab238&th=1&linkCode=sl1&tag=dealcentra075-20&linkId=561c25ca1d7b8a0711be12d529886650&language=en_US&ref_=as_li_ss_tl",
+    "image": "https://m.media-amazon.com/images/I/41f5-TBS-7L._SX342_SY445_QL70_FMwebp_.jpg",
+    "images": [
+      "https://m.media-amazon.com/images/I/41f5-TBS-7L._SX342_SY445_QL70_FMwebp_.jpg",
+      "https://m.media-amazon.com/images/I/61Y1ovY0vVL._SL1500_.jpg"
+    ],
+    "price": "Price not available",
+    "category": "Electronics & Gaming",
+    "review": "Advanced VR headset with improved memory and graphics, wireless and bundle included for immersive gaming.",
+    "pros": ["Wireless VR", "Exclusive bundle", "40+ games"],
+    "cons": ["Price not available", "Requires space"],
+    "whyBuy": "Great entry-level VR experience with plenty of content.",
+    "dealScore": 9.0,
     "editorPick": false
   }
 ];

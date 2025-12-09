@@ -1,7 +1,7 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 
-const affiliateUrl = 'https://www.amazon.com/Nutrafol-Supplements-Clinically-Dermatologist-Recommended/dp/B07QZ5CTTF/ref=sr_1_2_sspa?crid=2WCFVX508AVYZ&dib=eyJ2IjoiMSJ9.jmhc7mbmoxQezFum9AgeTkRn4SnKJoqM5EeckpWbJhGeELJrn5luSQWMAo0qd0exvtu8dfNFH3wzjHk26VEmHxihiKnSkeeNFLMaNdrwmuiOVihMHiYlTqM3TeDd4_wo-vjd34PrON5o10RgybGmsfQNYVnz8uNmjm12wZVmKM51X8_fZcKX3z_5bZ1qXaEmwH9VydIZRwygIFLAFUjPYbjzEx2VyppfFTpsaFwVGbWFE8r6L8EYUS36M-gRZ8MIlQ2ks466ZtG1qMmDhu7z3Ztm4m1GsvmdlAnoMIdq-KY.7fsDL0m0o7e94bnQPMhJnpTz7r9Vrl3Dtp2o2UXkSQw&dib_tag=se&keywords=hair&qid=1765219861&sprefix=hair%2Caps%2C943&sr=8-2-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1';
+const affiliateUrl = 'https://www.amazon.com/Meta-Quest-128GB-Cardboard-Exclusive-Oculus/dp/B0F2GYMC8H?pf_rd_p=2b46bcf8-ad8c-4e4b-bb3e-d4146d83a21c&pf_rd_r=70274V03QGVN3C78EW0Y&sr=1-7-969f4cb0-824d-4648-acec-369c6cfab238&th=1&linkCode=sl1&tag=dealcentra075-20&linkId=561c25ca1d7b8a0711be12d529886650&language=en_US&ref_=as_li_ss_tl';
 
 async function fetchProduct() {
     try {
